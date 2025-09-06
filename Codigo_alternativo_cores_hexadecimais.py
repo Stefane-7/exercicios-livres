@@ -22,7 +22,6 @@ cores = {
 }
 
 # Dicionário invertido: código -> cor
-codigos_para_cores = {v.upper(): k for k, v in cores.items()}
 
 while True:
     entrada = input("Digite o nome ou o código da cor (ou 'sair' para parar): ").strip()
