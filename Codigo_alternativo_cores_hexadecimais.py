@@ -2,7 +2,6 @@
 permitir que o usuário procure o código de uma cor repetidamente. O loop deve terminar
 quando o usuário digitar "sair"."""
 
-
 cores = {
     "preto": "#000000",
     "branco": "#FFFFFF",
@@ -22,6 +21,7 @@ cores = {
 }
 
 # Dicionário invertido: código -> cor
+codigos_para_cores = {v.upper(): k for k, v in cores.items()}
 
 while True:
     entrada = input("Digite o nome ou o código da cor (ou 'sair' para parar): ").strip()
